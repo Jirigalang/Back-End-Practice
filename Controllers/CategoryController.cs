@@ -30,7 +30,7 @@ namespace BackEndPractice.Controllers
             await _context.SaveChangesAsync();
 
             // 返回创建的分类及其 URI
-            return CreatedAtAction(nameof(GetCategories), new { id = category.Id }, category);
+            return CreatedAtAction(nameof(GetCategories), new { id = category.Id }, category);            
         }
         // 删除一个分类
         [HttpDelete("{id}")]
